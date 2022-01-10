@@ -2,11 +2,7 @@ import pprint
 
 import requests
 import Config
-response = requests.request("GET", Config.project_url, headers=Config.project_headers, data=Config.payload_projects)
-JsonObj = response.json()
-pprint.pprint(JsonObj)
-print("The response status code value is " , response.status_code)
-assert response.status_code == 200
+
 
 def test_statuscodeis_200():
     response = requests.request("GET", Config.project_url, headers=Config.project_headers, data=Config.payload_projects)

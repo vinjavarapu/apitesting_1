@@ -1,7 +1,7 @@
 import requests
 import json
 
-import Config
+from apitesting_1 import Config
 
 url = "https://api.staging.artemis.im/users/contact-us"
 
@@ -14,6 +14,7 @@ headers = {
 def test_checkstatus():
   response = requests.request("POST", url, headers=headers, data=users_data)
   print(response.status_code)
+  print(response.text)
 
 
 

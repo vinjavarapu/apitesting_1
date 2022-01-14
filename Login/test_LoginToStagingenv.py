@@ -33,7 +33,7 @@ def test_displayName():
     response_body = response.json()
     displayName = response_body['displayName']
     print(displayName)
-    assert displayName == "joseeeeee Rizal 2"
+    assert displayName == "Ravi Vinjavarapu"
 
 
 

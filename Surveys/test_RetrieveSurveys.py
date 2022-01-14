@@ -2,7 +2,7 @@ import pprint
 import Config
 import requests
 
-url = "https://api.staging.artemis.im/surveys?projectUuid=79683bf6-982a-452a-a644-ffa4aa92864b"
+url = "https://api.staging.artemis.im/surveys?projectUuid=d564a784-c6cf-4437-9d0e-38d86c4bfd2f"
 
 payload = ""
 headers = {

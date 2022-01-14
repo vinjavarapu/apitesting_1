@@ -1,49 +1,42 @@
+import pprint
+
 import requests
 import json
 import Config
 
-url = "https://api.staging.artemis.im/surveys/6aea9222-a6e2-41c4-8513-6baffdab410f"
+url = "https://api.staging.artemis.im/projects/1311c8c1-456a-4194-ac1a-bd21e98dac2c"
 
 payload = json.dumps({
-  "title": "Updated survey title"
+  "isFavorite": True
 })
 headers = {
   'Authorization': Config.token_user,
   'Content-Type': 'application/json'
 }
-
-def test_statuscode():
-
+def test_checkstatuscode():
   response = requests.request("PATCH", url, headers=headers, data=payload)
   statuscode=response.status_code
   print(statuscode)
   assert statuscode == 200
-
-def test_fetchtheresponsebody():
+def test_verifyresponsebody():
   response = requests.request("PATCH", url, headers=headers, data=payload)
   JsonObj = response.json()
-  print(JsonObj)
-
-def test_questionsfieldPresent():
+  pprint.pprint(JsonObj)
+def test_isFavoritefield_exists():
   response = requests.request("PATCH", url, headers=headers, data=payload)
   JsonObj = response.json()
-  assert 'questions' in JsonObj['data']
-
-def test_TitleProject():
+  assert 'isFavorite' in JsonObj['data']
+def test_verifystatusof_IsFavorite():
   response = requests.request("PATCH", url, headers=headers, data=payload)
   JsonObj = response.json()
-  title = JsonObj['data']['project']['title']
-  print('The title of project  is ', title)
-
-def test_updatedSurveyTitle():
+  isFavorite = JsonObj['data']['isFavorite']
+  print(isFavorite)
+  assert isFavorite == True
+def test_fetchProjectTitle():
   response = requests.request("PATCH", url, headers=headers, data=payload)
   JsonObj = response.json()
-  surveyname = JsonObj['data']['title']
-  print(surveyname)
-
-
-
-
+  title_of_project = JsonObj['data']['title']
+  print(title_of_project)
 
 
 

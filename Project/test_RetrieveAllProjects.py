@@ -25,7 +25,7 @@ def test_displayName_firestrecord():
     response = requests.request("GET", Config.project_url, headers=Config.project_headers, data=Config.payload_projects)
     response_body = response.json()
     displayName = response_body['data'][0]['owner']['displayName']
-    assert displayName == "Testing"
+    assert displayName == "organizer1d"
 
 
 

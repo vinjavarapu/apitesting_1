@@ -4,7 +4,7 @@ import requests
 import json
 import Config
 
-url = "https://api.staging.artemis.im/surveys/386b4fd7-a178-476d-ab86-bc59585f4c02/questions"
+url = "https://api.staging.artemis.im/surveys/e9075c8e-e788-48ea-ad16-f096817c21fa/questions"
 
 payload = json.dumps({
   "text": "Selenium Question 1 ?",

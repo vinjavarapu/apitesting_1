@@ -2,7 +2,7 @@ import requests
 import json
 import Config
 
-url = "https://api.staging.artemis.im/projects/68803e6d-073d-4706-ad2a-bb1c0b1940a8"
+url = "https://api.staging.artemis.im/projects/c62eaa0b-7886-4068-aa12-a93e5ec9e07a"
 
 payload = ""
 headers = {

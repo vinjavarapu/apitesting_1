@@ -14,8 +14,6 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-#test_json = open("Create_Organization.json","r").read()
-
 def test_checkstatuscode():
   response = requests.request("POST", url, headers=headers, data=payload)
   statuscode = response.status_code

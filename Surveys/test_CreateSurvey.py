@@ -6,16 +6,15 @@ import Config
 url = "https://api.staging.artemis.im/surveys"
 
 payload = json.dumps({
-  "projectUuid": "ebd83f2b-cc17-4d16-9d0e-93e1bcc97dde"
+  "projectUuid": "cd5bdcc4-7bd8-4e7e-ae0c-b60846ced145"
 })
+
+
 headers = {
   'Authorization':Config.token_user,
   'Content-Type': 'application/json'
 }
 
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
 
 
 def test_statuscodeof_CreateSurveyAPICall():

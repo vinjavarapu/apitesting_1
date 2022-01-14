@@ -4,7 +4,7 @@ import requests
 import json
 import Config
 
-url = "https://api.staging.artemis.im/surveys/e9075c8e-e788-48ea-ad16-f096817c21fa/questions"
+url = "https://api.staging.artemis.im/surveys/a10407b7-d411-4ede-b0cd-04240cedec7f/questions"
 
 payload = json.dumps({
   "text": "SkipLogicWith",

@@ -5,7 +5,7 @@ import Config
 url = "https://api.staging.artemis.im/projects/ee414410-a40f-4e52-977f-0768c93926ba"
 
 payload = json.dumps({
-  "title": "Project Change Goal 3",
+  "title": "Project API Change Goal 3",
   "goalUuid": "b3e1af0a-367e-4887-bbcc-38dcfc9e7eea",
   "subgoalUuid": "3e48bbc2-2c8d-4548-a9cf-6a47ed61c175"
 })

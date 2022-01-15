@@ -16,7 +16,7 @@ payload={}
 
 ###############################################################################################################################
 
-############################## Login API to User Data########################################################################
+############################## Login to User Data########################################################################
 
 token_user = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjM1MDZmMzc1MjI0N2ZjZjk0Y2JlNWQyZDZiNTlmYThhMmJhYjFlYzIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiVGVzdGluZyIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaDNGUHU3c1EwQXBUbU9paHBleHIzd2RCMnhOVjMyWHNsYzA1M2hhZz1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9hcnRlbWlzLXN0YWdpbmctNTE1MDIiLCJhdWQiOiJhcnRlbWlzLXN0YWdpbmctNTE1MDIiLCJhdXRoX3RpbWUiOjE2NDIxMzQ3OTksInVzZXJfaWQiOiJmUXpYakpadHZSV3FtOGlkSkJ0d3ZLR0Q4M2MyIiwic3ViIjoiZlF6WGpKWnR2UldxbThpZEpCdHd2S0dEODNjMiIsImlhdCI6MTY0MjEzNDc5OSwiZXhwIjoxNjQyMTM4Mzk5LCJlbWFpbCI6InZpbmphdmFyYXB1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTEwODAxODU1ODk4ODIyMjAyMDYyIl0sImVtYWlsIjpbInZpbmphdmFyYXB1QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.SrnZZokAzLVVeOhoZSgCGoCNcTHre-XHdnHlTf7zU_34sAznw8sVYCohtpXQnFemTOiwakhPvhU1mn18aY_GZ7U2lUKwj-Ih6_bka3SsBUuLWMIozyLb5suR_kh31U0I1ALRkiSlZlNrqCdu9RbsuOMZMBqs2hA8QkLr_p2cuJa1ZYjyXDgyKXEcN9Fo6c-DO6--x_vLKj2ElIRxwH-pT0tkbZHWLjF9pjvA6oAgVRhEiYgdrDgqCdjvrcQ64qegv5paH6AMCIrAs0U7C4UmoU805OphJlovk1WVyvxxRL3tp3n1S_0ld9YxJLrHr1tmuQNG1GHw2PK524IyTxH5Ig"
 
@@ -28,7 +28,7 @@ headers = {
 
 #################################################################################################################################
 
-#################### Create Project API #######################################
+#################### Create Project #######################################
 project_url = "https://api.staging.artemis.im/projects"
 payload_projects = json.dumps({
   "title": "V RaviKumar, Relax man"
@@ -51,7 +51,7 @@ headers = {
 
 ########################################################################################
 
-####################  Retrieve a Single Project API ################################
+####################  Retrieve a Single Project ################################
 
 retrieveprojectbyid_url = "https://api.staging.artemis.im/projects/339e2755-06ad-4c19-830d-74ccee72b5ef"
 

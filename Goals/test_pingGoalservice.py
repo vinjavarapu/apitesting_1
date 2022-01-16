@@ -1,5 +1,5 @@
 import pprint
-
+from apitesting_1 import Config
 import requests
 
 url = "https://api.staging.artemis.im/goals/ping"

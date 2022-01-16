@@ -1,8 +1,6 @@
 import pprint
-
 import requests
-import fileinput
-import Config
+from apitesting_1 import Config
 
 url = "https://api.staging.artemis.im/media?type=project_banner"
 

@@ -1,7 +1,7 @@
 import pprint
 
 import requests
-import Config
+from apitesting_1 import Config
 
 
 def test_statuscodeis_200():

@@ -1,5 +1,5 @@
 import requests
-import Config
+from apitesting_1 import Config
 import json
 
 url = "https://api.staging.artemis.im/notifications?app=organizer"

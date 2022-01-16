@@ -2,7 +2,7 @@ import pprint
 
 import requests
 import json
-import Config
+from apitesting_1 import Config
 
 url = "https://api.staging.artemis.im/surveys/a0932bf0-56f7-4e25-881c-38447b22e126"
 

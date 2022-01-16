@@ -1,5 +1,5 @@
 import pprint
-import Config
+from apitesting_1 import Config
 import requests
 
 url = "https://api.staging.artemis.im/surveys?projectUuid=d564a784-c6cf-4437-9d0e-38d86c4bfd2f"

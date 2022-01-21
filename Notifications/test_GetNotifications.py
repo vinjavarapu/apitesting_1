@@ -26,13 +26,13 @@ def test_fetchtitleKey():
   JsonObj = response.json()
   print('-----------------------------------------------------------------------------------------')
   titleKey = JsonObj['data'][2]['data']['titleKey']
-  assert titleKey == "notification_member_invited_title"
+  assert titleKey == "notification_new_member_invite_title"
 def test_verifystatusofnotifcation():
   response = requests.request("GET", url, headers=headers, data=payload)
   JsonObj = response.json()
   print('-----------------------------------------------------------------------------------------')
   status = JsonObj['data'][2]['status']
-  assert status == "unviewed"
+  assert status == "viewed"
 def test_fetchuuid_notification():
   response = requests.request("GET", url, headers=headers, data=payload)
   JsonObj = response.json()

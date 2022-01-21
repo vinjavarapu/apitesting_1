@@ -34,7 +34,7 @@ def test_errorcodes():
   JsonObj = response.json()
   errcode=JsonObj['errors'][0]['msg']
   print(errcode)
-  assert errcode == "error_must_not_yet_be_closed"
+  assert errcode == "error_must_exist"
 
 
 

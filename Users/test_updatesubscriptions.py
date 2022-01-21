@@ -1,6 +1,6 @@
 import requests
 
-import Config
+from apitesting_1 import Config
 
 url = "https://api.staging.artemis.im/users/_me"
 

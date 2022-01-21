@@ -1,7 +1,7 @@
 import pprint
 
 import requests
-import Config
+from apitesting_1 import Config
 import json
 
 url = "https://api.staging.artemis.im/users/ceab1dba-af2f-42b5-ad80-539d1c191546?origin=organizer"

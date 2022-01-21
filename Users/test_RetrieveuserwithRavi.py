@@ -1,10 +1,10 @@
 import pprint
 
 import requests
-import Config
+from apitesting_1 import Config
 import json
 
-import Config
+
 
 url = "https://api.staging.artemis.im/users/?query=Ravi"
 
